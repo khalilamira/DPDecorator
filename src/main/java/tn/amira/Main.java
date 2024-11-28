@@ -26,7 +26,7 @@ public class Main {
         boisson = new Noisette(boisson);
         System.out.println(boisson.cout());
         System.out.println(boisson.getDescription());
-        System.out.println("-------------------------");
+        System.out.println("------------------------- ");
         boisson = new Chantilly(boisson);
         System.out.println(boisson.cout());
         System.out.println(boisson.getDescription());
