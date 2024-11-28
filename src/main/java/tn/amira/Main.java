@@ -1,6 +1,7 @@
 package tn.amira;
 
 import boissons.Boisson;
+import boissons.Deca;
 import boissons.Espresso;
 import boissons.Sumatra;
 import deco.Chantilly;
@@ -30,5 +31,11 @@ public class Main {
         boisson = new Chantilly(boisson);
         System.out.println(boisson.cout());
         System.out.println(boisson.getDescription());
+
+        System.out.println("--------------------");
+        //en gros c'est une liste chaine des objets
+        Boisson b = new Chantilly(new Chantilly(new Noisette(new Deca())));
+        System.out.println(b.getDescription());
+        System.out.println(b.cout());
     }
 }
