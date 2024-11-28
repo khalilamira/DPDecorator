@@ -9,6 +9,11 @@ public class Chocolat extends DecorateurBoisson{
     }
 
     @Override
+    public String getDescription(){
+        return boisson.getDescription() + " Au chocolat";
+    }
+
+    @Override
     public double cout() {
         return 1.2 + boisson.cout();
     }
